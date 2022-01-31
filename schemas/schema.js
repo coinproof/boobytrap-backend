@@ -6,14 +6,12 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import owners from './owners'
 import promoters from './promoters'
 import influencers from './influencers'
-import projects from './projects'
+import uprojects from './uprojects'
 import blogs from './blogs'
 import authors from './authors'
 import developers from './developers'
-import projectstat from './projectstat'
-import engagementRating from './engagementRating'
-import roi from './roi'
 import iep from './iep'
+import launchedprojects from './launchedprojects'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -27,9 +25,10 @@ export default createSchema({
     promoters,
     developers,
     influencers,
-    projects,
+    uprojects,
+    launchedprojects,
     blogs,
     authors,
-    iep
+    iep,
   ]),
 })

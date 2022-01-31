@@ -1,8 +1,14 @@
 export default{
-    name:"projects",
+    name:"uprojects",
     type:"document",
-    title:"Projects",
+    title:"Upcoming Projects",
     fields:[
+        {
+            name:"email",
+            type:"email",
+            title:"Email",
+            validation: Rule => Rule.required(),
+        },
         {
             name:"name",
             type:"string",
@@ -19,6 +25,23 @@ export default{
             name:"contract",
             type:"string",
             title:"Contract Address",
+        },
+        {
+            name:"audit",
+            type:"url",
+            title:"Audit Link",
+            validation: Rule => Rule.required(),
+        },
+        {
+            name:"kyc",
+            type:"url",
+            title:"KYC Link",
+            validation: Rule => Rule.required(),
+        },
+        {
+            name:"budget",
+            type:"string",
+            title:"Private/Seed funding",
         },
         {
             name:"owner",
@@ -62,10 +85,36 @@ export default{
             title:"Instagram",
         },
         {
+            name:"reditt",
+            type:"url",
+            title:"Reditt",
+        },
+        {
+            name:"youtube",
+            type:"url",
+            title:"Youtube",
+        },
+        {
+            name:"other",
+            type:"string",
+            title:"Other Socials",
+        },
+        {
+            name:"tgOwner",
+            description:"Provide your official TG handle where our team can approach you",
+            type:"url",
+            title:"TG Owner",
+        },
+        {
             name:"image",
             type:"image",
             title:"Upload Logo",
             validation: Rule => Rule.required(),
+        },
+        {
+            name:"devwallet",
+            type:"string",
+            title:"Dev Wallet",
         },
         {
             title: 'Project Status',
@@ -73,9 +122,10 @@ export default{
             type: 'string',
             options: {
               list: [
-                { title: 'Upcoming', value: 'upcoming' },
-                { title: 'Ongoing', value: 'ongoing' },
-                { title: 'Abandoned', value: 'abandoned' },
+                { title: 'Exploring the idea', value: 'exploring' },
+                { title: 'Early development', value: 'early' },
+                { title: 'Final development stage', value: 'final' },
+                { title: 'Ready to launch', value: 'ready' },
               ],
             },
           },
