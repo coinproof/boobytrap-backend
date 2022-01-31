@@ -1,3 +1,4 @@
+import {isUniqueAcrossAllDocuments} from '../lib/isUniqueAcrossAllDocuments'
 export default{
     name:"lprojects",
     type:"document",
@@ -19,6 +20,16 @@ export default{
             name:"tracker",
             type:"string",
             title:"Tracker",
+            validation: Rule => Rule.required(),
+        },
+        {
+            name:"slug",
+            type:"slug",
+            title:"Slug",
+            options:{
+                source:"name",
+                isUnique: isUniqueAcrossAllDocuments,
+            },
             validation: Rule => Rule.required(),
         },
         {

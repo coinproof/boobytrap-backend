@@ -1,3 +1,4 @@
+import {isUniqueAcrossAllDocuments} from '../lib/isUniqueAcrossAllDocuments'
 export default{
     name:"amagroups",
     type:"document",
@@ -19,6 +20,16 @@ export default{
             name:"admin",
             type:"string",
             title:"Admin",
+        },
+        {
+            name:"slug",
+            type:"slug",
+            title:"Slug",
+            options:{
+                source:"name",
+                isUnique: isUniqueAcrossAllDocuments,
+            },
+            validation: Rule => Rule.required(),
         },
         {
             name:"telegram",
