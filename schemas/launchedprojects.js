@@ -23,6 +23,12 @@ export default{
             validation: Rule => Rule.required(),
         },
         {
+            name:"id",
+            type:"number",
+            title:"ID on Blockchain",
+            validation: Rule => Rule.required(),
+        },
+        {
             name:"slug",
             type:"slug",
             title:"Slug",
@@ -81,6 +87,11 @@ export default{
             name:"athMC",
             type:"string",
             title:"MC at ATH (in USD)",
+        },
+        {
+            name:"comStrength",
+            type:"number",
+            title:"Community Strength (in k)",
         },
         {
             name:"owner",
@@ -166,6 +177,11 @@ export default{
             name:"devwallet",
             type:"string",
             title:"Dev Wallet",
+        },
+        {
+            name:"newlyLaunched",
+            type:"boolean",
+            title:"Is Newly Launched?",
         },
         {
             title: 'Development Status',

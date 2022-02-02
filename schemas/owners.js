@@ -11,6 +11,12 @@ export default{
             validation: Rule => Rule.required(),
         },
         {
+            name:"id",
+            type:"number",
+            title:"ID on Blockchain",
+            validation: Rule => Rule.required(),
+        },
+        {
             name:"alias",
             type:"string",
             title:"Alias",
@@ -32,10 +38,23 @@ export default{
             validation: Rule => Rule.required(),
         },
         {
+            name:"uprojects",
+            type:"reference",
+            to: [{
+                type:"uprojects",
+            }]
+        },
+        {
+            name:"lprojects",
+            type:"reference",
+            to: [{
+                type:"lprojects",
+            }]
+        },
+        {
             name:"twitter",
             type:"url",
             title:"Twitter",
-            validation: Rule => Rule.required(),
         },
         {
             name:"trapPoints",
@@ -46,6 +65,12 @@ export default{
             name:"image",
             type:"image",
             title:"Image",
+            validation: Rule => Rule.required(),
+        },
+        {
+            name:"comStrength",
+            type:"number",
+            title:"Community Strength (in k)",
             validation: Rule => Rule.required(),
         },
         {

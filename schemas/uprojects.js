@@ -23,6 +23,12 @@ export default{
             validation: Rule => Rule.required(),
         },
         {
+            name:"id",
+            type:"number",
+            title:"ID on Blockchain",
+            validation: Rule => Rule.required(),
+        },
+        {
             name:"slug",
             type:"slug",
             title:"Slug",

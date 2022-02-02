@@ -26,6 +26,12 @@ export default{
             validation: Rule => Rule.required(),
         },
         {
+            name:"id",
+            type:"number",
+            title:"ID on Blockchain",
+            validation: Rule => Rule.required(),
+        },
+        {
             name:"twitter",
             type:"url",
             title:"Twitter",
