@@ -29,6 +29,12 @@ export default{
             validation: Rule => Rule.required(),
         },
         {
+            name:"trappoints",
+            type:"number",
+            title:"Trap Points",
+            validation: Rule => Rule.required(),
+        },
+        {
             name:"slug",
             type:"slug",
             title:"Slug",
