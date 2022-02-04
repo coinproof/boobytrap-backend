@@ -71,11 +71,11 @@ export default{
             title:"Skills",
             options: {
                 list: [
-                  { title: 'NFT Marketplace', value: 'nft' },
-                  { title: 'DAPP Development', value: 'dapp' },
-                  { title: 'Smart Contract Development', value: 'smartContract' },
-                  { title: 'Token Development', value: 'token' },
-                  { title: 'Blockchain Development', value: 'blockchain' },
+                  { title: 'NFT Marketplace', value: 'NFT Marketplace' },
+                  { title: 'DAPP Development', value: 'DAPP Development' },
+                  { title: 'Smart Contract Development', value: 'Smart Contract Development' },
+                  { title: 'Token Development', value: 'Token Development' },
+                  { title: 'Blockchain Development', value: 'Blockchain Development' },
                 ],
             },
             validation: Rule => Rule.required(),
