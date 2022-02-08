@@ -60,6 +60,11 @@ export default{
             validation: Rule => Rule.required(),
         },
         {
+            name:"avgPrice",
+            type:"number",
+            title:"Avg Cost",
+        },
+        {
             name:"experience",
             type:"number",
             title:"Experience in Months",

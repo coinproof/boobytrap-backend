@@ -50,6 +50,11 @@ export default{
             validation: Rule => Rule.required(),
         },
         {
+            name:"groupCreated",
+            type:"date",
+            title:"Group Created on",
+        },
+        {
             name:"tgAdmin",
             type:"url",
             title:"Admin's TG",
