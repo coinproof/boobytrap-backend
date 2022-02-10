@@ -208,5 +208,14 @@ export default{
             type: 'array', 
             of: [{type: 'block'}],
           }
-    ]
+    ],
+    orderings: [
+    {
+      title: 'Sort Trappoints',
+      name: 'trappointsAsc',
+      by: [
+        {field: 'trappoints', direction: 'asc'}
+      ]
+    }
+  ]
 }
