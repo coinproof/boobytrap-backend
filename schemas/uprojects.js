@@ -146,12 +146,18 @@ export default{
               ],
             },
           },
+        // {
+        //     title: 'Description',
+        //     validation: Rule => Rule.required(),
+        //     name: 'description',
+        //     type: 'array', 
+        //     of: [{type: 'block'}],
+        //   }
         {
             title: 'Description',
             validation: Rule => Rule.required(),
             name: 'description',
-            type: 'array', 
-            of: [{type: 'block'}],
+            type: 'string',
           }
     ]
 }

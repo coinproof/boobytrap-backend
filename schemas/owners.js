@@ -91,5 +91,10 @@ export default{
             title:"Avg life of Projects in Months",
             validation: Rule => Rule.required(),
         },
+        {
+            title: 'About',
+            name: 'about',
+            type: 'string',
+          }
     ]
 }

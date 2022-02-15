@@ -93,5 +93,10 @@ export default{
             },
             validation: Rule => Rule.required(),
           },
+        {
+            title: 'About',
+            name: 'about',
+            type: 'string',
+          }
     ]
 }

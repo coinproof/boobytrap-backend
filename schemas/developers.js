@@ -90,5 +90,10 @@ export default{
             type:"string",
             title:"Any other skills",
         },
+        {
+            title: 'About',
+            name: 'about',
+            type: 'string',
+          }
     ]
 }
