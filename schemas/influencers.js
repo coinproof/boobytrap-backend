@@ -35,19 +35,16 @@ export default{
             name:"experience",
             type:"string",
             title:"Experience in Months",
-            validation: Rule => Rule.required(),
         },
         {
             name:"avgPrice",
             type:"number",
             title:"Avg Cost",
-            validation: Rule => Rule.required(),
         },
         {
             name:"twitter",
             type:"url",
             title:"Twitter",
-            validation: Rule => Rule.required(),
         },
         {
             name:"telegram",
@@ -59,7 +56,6 @@ export default{
             name:"instagram",
             type:"url",
             title:"Instagram",
-            validation: Rule => Rule.required(),
         },
         {
             name:"image",

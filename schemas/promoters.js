@@ -20,7 +20,6 @@ export default{
             name:"groupowner",
             type:"string",
             title:"Group Owner",
-            validation: Rule => Rule.required(),
         },
         {
             name:"admin",
@@ -47,7 +46,6 @@ export default{
             name:"tgOwner",
             type:"url",
             title:"Owner's TG",
-            validation: Rule => Rule.required(),
         },
         {
             name:"groupCreated",
@@ -63,7 +61,6 @@ export default{
             name:"avgCost",
             type:"number",
             title:"Avg Price",
-            validation: Rule => Rule.required(),
         },
         {
             name:"image",
