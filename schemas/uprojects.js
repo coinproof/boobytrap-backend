@@ -39,6 +39,17 @@ export default{
             validation: Rule => Rule.required(),
         },
         {
+            name:"trappoints",
+            type:"number",
+            title:"Trap Points",
+            validation: Rule => Rule.required(),
+        },
+        {
+            name:"comStrength",
+            type:"number",
+            title:"Community Strength (in k)",
+        },
+        {
             name:"contract",
             type:"string",
             title:"Contract Address",
@@ -134,6 +145,11 @@ export default{
             title:"Dev Wallet",
         },
         {
+            name:"teamwallet",
+            type:"string",
+            title:"Team Wallet",
+        },
+        {
             title: 'Project Status',
             name: 'status',
             type: 'string',
@@ -151,6 +167,12 @@ export default{
             validation: Rule => Rule.required(),
             name: 'description',
             type: 'string',
+          },
+          {
+            title: 'Expert Opinion',
+            name: 'expertOpinion',
+            type: 'array', 
+            of: [{type: 'block'}],
           }
     ]
 }

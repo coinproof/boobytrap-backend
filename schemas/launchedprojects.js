@@ -113,9 +113,9 @@ export default{
             type: 'string',
             options: {
               list: [
-                { title: 'Aggressive Marketing', value: 'aggressive' },
-                { title: 'Being actively marketed', value: 'actively' },
-                { title: 'No marketing', value: 'none' },
+                { title: 'Aggressive Marketing', value: 'Aggressive Marketing' },
+                { title: 'Being actively marketed', value: 'Being actively marketed' },
+                { title: 'No marketing', value: 'No marketing' },
               ],
             },
           },
@@ -185,6 +185,36 @@ export default{
             title:"Dev Wallet",
         },
         {
+            name:"teamwallet",
+            type:"string",
+            title:"Team Wallet",
+        },
+        {
+            name:'cmc',
+            type:'url',
+            title:'CMC Link'
+        },
+        {
+            name:'cg',
+            type:'url',
+            title:'CG Link'
+        },
+        {
+            name:'holdersCount',
+            type:'string',
+            title:'Number of Holders',
+        },
+        {
+            name:'exchanges',
+            type:"string",
+            title:"Exchanges Listed",
+        },
+        {
+            name:"chart",
+            type:"url",
+            title:"Chart Link"
+        },
+        {
             name:"newlyLaunched",
             type:"boolean",
             title:"Is Newly Launched?",
@@ -195,9 +225,9 @@ export default{
             type: 'string',
             options: {
               list: [
-                { title: 'All promised utilities delivered', value: 'delivered' },
-                { title: 'Close to delivering promised utilities', value: 'willDeliver' },
-                { title: 'Planning new utilities', value: 'planning' },
+                { title: 'All promised utilities delivered', value: 'All promised utilities delivered' },
+                { title: 'Close to delivering promised utilities', value: 'Close to delivering promised utilities' },
+                { title: 'Planning new utilities', value: 'Planning new utilities' },
               ],
             },
           },
@@ -206,6 +236,12 @@ export default{
             validation: Rule => Rule.required(),
             name: 'description',
             type: 'string',
+          },
+          {
+            title: 'Expert Opinion',
+            name: 'expertOpinion',
+            type: 'array', 
+            of: [{type: 'block'}],
           }
     ],
     orderings: [
