@@ -155,10 +155,10 @@ export default{
             type: 'string',
             options: {
               list: [
-                { title: 'Exploring the idea', value: 'exploring' },
-                { title: 'Early development', value: 'early' },
-                { title: 'Final development stage', value: 'final' },
-                { title: 'Ready to launch', value: 'ready' },
+                { title: 'Exploring the idea', value: 'Exploring the idea' },
+                { title: 'Early development', value: 'Early development' },
+                { title: 'Final development stage', value: 'Final development stage' },
+                { title: 'Ready to launch', value: 'Ready to launch' },
               ],
             },
           },
