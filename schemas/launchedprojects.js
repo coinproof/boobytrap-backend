@@ -80,6 +80,11 @@ export default{
             validation: Rule => Rule.required(),
         },
         {
+            name:"lpLocked",
+            type:"date",
+            title:"Liquidity locked till",
+        },
+        {
             name:"initialMC",
             type:"string",
             title:"Initial MC",
@@ -200,6 +205,11 @@ export default{
             title:'CG Link'
         },
         {
+            name:"cgId",
+            type:"string",
+            title:"CG API ID",
+        },
+        {
             name:'holdersCount',
             type:'string',
             title:'Number of Holders',
@@ -228,6 +238,7 @@ export default{
                 { title: 'All promised utilities delivered', value: 'All promised utilities delivered' },
                 { title: 'Close to delivering promised utilities', value: 'Close to delivering promised utilities' },
                 { title: 'Planning new utilities', value: 'Planning new utilities' },
+                { title: 'Failed to deliver utilities', value: 'Failed to deliver utilities' },
               ],
             },
           },
