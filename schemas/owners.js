@@ -38,18 +38,10 @@ export default{
             validation: Rule => Rule.required(),
         },
         {
-            name:"uprojects",
-            type:"reference",
-            to: [{
-                type:"uprojects",
-            }]
-        },
-        {
-            name:"lprojects",
-            type:"reference",
-            to: [{
-                type:"lprojects",
-            }]
+            name:"trappoints",
+            type:"number",
+            title:"Trap Points",
+            validation: Rule => Rule.required(),
         },
         {
             name:"twitter",

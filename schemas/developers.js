@@ -32,6 +32,12 @@ export default{
             validation: Rule => Rule.required(),
         },
         {
+            name:"trappoints",
+            type:"number",
+            title:"Trap Points",
+            validation: Rule => Rule.required(),
+        },
+        {
             name:"telegram",
             type:"url",
             title:"Telegram",
@@ -61,7 +67,7 @@ export default{
         },
         {
             name:"avgPrice",
-            type:"number",
+            type:"string",
             title:"Avg Cost",
         },
         {

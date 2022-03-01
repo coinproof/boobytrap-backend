@@ -8,7 +8,6 @@ export default{
             name:"email",
             type:"email",
             title:"Email",
-            validation: Rule => Rule.required(),
         },
         {
             name:"name",
@@ -51,27 +50,23 @@ export default{
         },
         {
             name:"audit",
-            type:"url",
+            type:"string",
             title:"Audit Link",
-            validation: Rule => Rule.required(),
         },
         {
             name:"kyc",
-            type:"url",
+            type:"string",
             title:"KYC Link",
-            validation: Rule => Rule.required(),
         },
         {
             name:"marketingWallet",
             type:"string",
             title:"Marketing Wallet",
-            validation: Rule => Rule.required(),
         },
         {
             name:"budget",
             type:"string",
             title:"Marketing Budget",
-            validation: Rule => Rule.required(),
         },
         {
             name:"tradingStartDate",

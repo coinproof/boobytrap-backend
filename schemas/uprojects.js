@@ -7,9 +7,7 @@ export default{
         {
             name:"email",
             type:"email",
-            title:"Email",
-            validation: Rule => Rule.required(),
-        },
+            title:"Email",        },
         {
             name:"name",
             type:"string",
@@ -42,7 +40,6 @@ export default{
             name:"trappoints",
             type:"number",
             title:"Trap Points",
-            validation: Rule => Rule.required(),
         },
         {
             name:"comStrength",
@@ -56,15 +53,13 @@ export default{
         },
         {
             name:"audit",
-            type:"url",
+            type:"string",
             title:"Audit Link",
-            validation: Rule => Rule.required(),
         },
         {
             name:"kyc",
-            type:"url",
+            type:"string",
             title:"KYC Link",
-            validation: Rule => Rule.required(),
         },
         {
             name:"budget",
@@ -145,9 +140,20 @@ export default{
             title:"Dev Wallet",
         },
         {
+            name:"newlyLaunched",
+            type:"boolean",
+            title:"Is Newly Launched?",
+        },
+        {
             name:"teamwallet",
             type:"string",
             title:"Team Wallet",
+        },
+        {
+            name:"isLaunched",
+            type:"boolean",
+            title:"Is Launched?",
+            description:"Is Project Launched?"
         },
         {
             title: 'Project Status',

@@ -26,6 +26,12 @@ export default{
             validation: Rule => Rule.required(),
         },
         {
+            name:"trappoints",
+            type:"number",
+            title:"Trap Points",
+            validation: Rule => Rule.required(),
+        },
+        {
             name:"id",
             type:"number",
             title:"ID on Blockchain",
@@ -38,7 +44,7 @@ export default{
         },
         {
             name:"avgPrice",
-            type:"number",
+            type:"string",
             title:"Avg Cost",
         },
         {
