@@ -49,11 +49,6 @@ export default{
             title:"Twitter",
         },
         {
-            name:"trapPoints",
-            type:"number",
-            title:"Trappoints",
-        },
-        {
             name:"image",
             type:"image",
             title:"Image",

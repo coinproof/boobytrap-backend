@@ -12,6 +12,7 @@ import authors from './authors'
 import developers from './developers'
 import iep from './iep'
 import launchedprojects from './launchedprojects'
+import minHolding from './roi'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,5 +31,6 @@ export default createSchema({
     blogs,
     authors,
     iep,
+    minHolding
   ]),
 })
