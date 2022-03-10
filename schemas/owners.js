@@ -82,6 +82,12 @@ export default{
             title: 'About',
             name: 'about',
             type: 'string',
+          },
+          {
+            title: "BBT's Verdict",
+            name: 'verdict',
+            type: 'array', 
+            of: [{type: 'block'}],
           }
     ]
 }

@@ -101,7 +101,6 @@ export default{
         },
         {
             name:"owner",
-            validation: Rule => Rule.required(),
             type:"reference",
             to: [{
                 type:"owners",
@@ -191,12 +190,12 @@ export default{
         },
         {
             name:'cmc',
-            type:'url',
+            type:'string',
             title:'CMC Link'
         },
         {
             name:'cg',
-            type:'url',
+            type:'string',
             title:'CG Link'
         },
         {
@@ -246,6 +245,12 @@ export default{
           {
             title: 'Expert Opinion',
             name: 'expertOpinion',
+            type: 'array', 
+            of: [{type: 'block'}],
+          },
+          {
+            title: "BBT's Verdict",
+            name: 'verdict',
             type: 'array', 
             of: [{type: 'block'}],
           }

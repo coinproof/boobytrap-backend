@@ -7,7 +7,8 @@ export default{
         {
             name:"email",
             type:"email",
-            title:"Email",        },
+            title:"Email",
+        },
         {
             name:"name",
             type:"string",
@@ -68,7 +69,6 @@ export default{
         },
         {
             name:"owner",
-            validation: Rule => Rule.required(),
             type:"reference",
             to: [{
                 type:"owners",
